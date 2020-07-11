@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x91"
+
+    android:gravity="center"
+    android:text="零食"
+    app:bl_selected_drawable="#1F417C"
+    app:bl_selected_stroke_color="#3699FF"
+    app:bl_stroke_width="@dimen/x2"
+    app:bl_unSelected_drawable="#E7F1FD"
+    app:bl_unSelected_stroke_color="#1F417C">
+
+</Button>

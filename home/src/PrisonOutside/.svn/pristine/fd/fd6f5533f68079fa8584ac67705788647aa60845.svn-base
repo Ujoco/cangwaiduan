@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tv_prison"
+        android:layout_width="@dimen/x180"
+        android:layout_height="wrap_content"
+        android:text="监     室     ："
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginLeft="@dimen/x556"
+        android:layout_marginTop="@dimen/x296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ed_prison"
+        android:layout_width="@dimen/x600"
+        android:layout_height="wrap_content"
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginTop="@dimen/x284"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_prison"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x298"
+        android:text="默认当前监室编号"
+        android:textColor="#878C91"
+
+        android:textSize="@dimen/x25"
+
+
+        app:layout_constraintLeft_toRightOf="@+id/ed_prison"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_rating_police"
+        android:layout_width="@dimen/x180"
+        android:layout_height="wrap_content"
+        android:text="评分民警 ："
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginLeft="@dimen/x556"
+        android:layout_marginTop="@dimen/x360"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ed_rating_police"
+        android:layout_width="@dimen/x600"
+        android:layout_height="wrap_content"
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginTop="@dimen/x344"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_rating_police"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="@dimen/x180"
+        android:layout_height="wrap_content"
+        android:text="时     间     ："
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginLeft="@dimen/x556"
+        android:layout_marginTop="@dimen/x424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ed_time"
+        android:layout_width="@dimen/x600"
+        android:layout_height="wrap_content"
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginTop="@dimen/x408"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="@dimen/x180"
+        android:layout_height="wrap_content"
+        android:text="评     分     ："
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginLeft="@dimen/x556"
+        android:layout_marginTop="@dimen/x483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ed_score"
+        android:layout_width="@dimen/x600"
+        android:layout_height="wrap_content"
+        android:textColor="#474747"
+        android:textSize="@dimen/x33"
+        android:layout_marginTop="@dimen/x467"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_score"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/igm_excellent"
+        android:layout_width="@dimen/x117"
+        android:layout_height="@dimen/x39"
+        android:src="@drawable/rectangle_blue"
+        android:layout_marginTop="@dimen/x20"
+        app:layout_constraintLeft_toRightOf="@+id/tv_score"
+        android:layout_marginLeft="@dimen/x15"
+        app:layout_constraintTop_toBottomOf="@+id/ed_score"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x796"
+        android:layout_marginTop="@dimen/x554"
+        android:text="优"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/x27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img_good"
+        android:layout_width="@dimen/x117"
+        android:layout_height="@dimen/x39"
+        android:src="@drawable/rectangle_grey"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x37"
+        app:layout_constraintLeft_toRightOf="@+id/igm_excellent"
+
+        app:layout_constraintTop_toBottomOf="@+id/ed_score"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="良"
+        android:textSize="@dimen/x27"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="@dimen/x950"
+        android:layout_marginTop="@dimen/x554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img_in"
+        android:layout_width="@dimen/x117"
+        android:layout_height="@dimen/x39"
+        android:src="@drawable/rectangle_grey"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x37"
+        app:layout_constraintLeft_toRightOf="@+id/img_good"
+
+        app:layout_constraintTop_toBottomOf="@+id/ed_score"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/img_good"
+        android:layout_marginLeft="@dimen/x80"
+        android:layout_marginTop="@dimen/x554"
+        android:text="中"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/x27"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:layout_width="@dimen/x117"
+        android:layout_height="@dimen/x39"
+        android:src="@drawable/rectangle_grey"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x37"
+        app:layout_constraintLeft_toRightOf="@+id/img_in"
+
+        app:layout_constraintTop_toBottomOf="@+id/ed_score"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/img_in"
+        android:layout_marginLeft="@dimen/x80"
+        android:layout_marginTop="@dimen/x554"
+        android:text="差"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/x27"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

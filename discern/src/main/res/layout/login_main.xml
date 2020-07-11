@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include layout="@layout/login_common"/>
+
+
+    <TextView
+        android:text="欢迎登录后台系统"
+        android:textSize="@dimen/x36"
+        android:textColor="#97E3F4"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clickable="true"
+        android:id="@+id/btnFingerprint"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/x215"
+        android:layout_marginBottom="@dimen/x204"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginBottom="@dimen/x110"
+            app:layout_constraintBottom_toTopOf="@id/tvFingerprint"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@mipmap/login_fingerprint"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x135"/>
+
+        <ImageView
+            app:layout_constraintBottom_toTopOf="@id/tvFingerprint"
+            android:layout_marginBottom="@dimen/x19"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@mipmap/discern_item_bg"
+            android:layout_width="@dimen/x353"
+            android:layout_height="@dimen/x182"/>
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#97E3F4"
+            android:id="@+id/tvFingerprint"
+            android:text="指纹登陆"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnFace"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/x215"
+        android:layout_marginBottom="@dimen/x204"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginBottom="@dimen/x110"
+            app:layout_constraintBottom_toTopOf="@id/tvFace"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@mipmap/login_face"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x135"/>
+
+        <ImageView
+            app:layout_constraintBottom_toTopOf="@id/tvFace"
+            android:layout_marginBottom="@dimen/x19"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@mipmap/discern_item_bg"
+            android:layout_width="@dimen/x353"
+            android:layout_height="@dimen/x182"/>
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#97E3F4"
+            android:id="@+id/tvFace"
+            android:text="人脸登陆"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:background="@mipmap/home_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DisciplineActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvRootName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x12"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/tvTime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="@dimen/x12"
+      android:text="2019-10-10 22:10:10"
+      android:textColor="@color/white"
+      android:textSize="@dimen/x25"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="@id/tvRootName"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@id/tvRootName" />
+
+  <TextView
+      android:id="@+id/tvBack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="@dimen/x65"
+      android:text="返回"
+      android:textColor="@color/white"
+      android:textSize="@dimen/x35"
+      android:layout_marginTop="@dimen/x60"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      tools:ignore="MissingConstraints" />
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rlTitle"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/x40"
+      android:layout_marginLeft="@dimen/x18"
+      android:layout_marginTop="@dimen/x50"
+      android:layout_marginRight="@dimen/x20"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/ivBack"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/ivBack"
+      android:layout_width="@dimen/x28"
+      android:layout_height="@dimen/x33"
+      android:layout_marginRight="@dimen/x8"
+      android:src="@mipmap/main_back"
+      app:layout_constraintBottom_toBottomOf="@id/tvBack"
+      app:layout_constraintRight_toLeftOf="@id/tvBack"
+      app:layout_constraintTop_toTopOf="@id/tvBack" />
+
+
+  <ImageView
+        android:id="@+id/img_violationsentry"
+        android:layout_width="@dimen/x273"
+        android:layout_height="@dimen/x461"
+        android:src="@mipmap/violationsentry"
+        android:layout_marginLeft="@dimen/x52"
+        android:layout_marginTop="@dimen/x317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img_callmanagement"
+        android:layout_width="@dimen/x273"
+        android:layout_height="@dimen/x461"
+        android:src="@mipmap/callmanagement"
+        android:layout_marginLeft="@dimen/x363"
+        android:layout_marginTop="@dimen/x317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_score"
+        android:layout_width="@dimen/x273"
+        android:layout_height="@dimen/x461"
+        android:src="@mipmap/score"
+        android:layout_marginLeft="@dimen/x673"
+        android:layout_marginTop="@dimen/x317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img_violationsupervision"
+        android:layout_width="@dimen/x273"
+        android:layout_height="@dimen/x461"
+        android:src="@mipmap/violationsupervision"
+        android:layout_marginLeft="@dimen/x984"
+        android:layout_marginTop="@dimen/x317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img_powercontrol"
+        android:layout_width="@dimen/x273"
+        android:layout_height="@dimen/x461"
+        android:layout_marginLeft="@dimen/x1080"
+        android:layout_marginTop="@dimen/x317"
+        android:layout_marginRight="@dimen/x353"
+        android:src="@mipmap/powercontrol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_multimediacontrol"
+        android:layout_width="@dimen/x273"
+        android:layout_height="@dimen/x461"
+        android:layout_marginLeft="@dimen/x1080"
+        android:layout_marginTop="@dimen/x317"
+        android:layout_marginRight="@dimen/x42"
+        android:src="@mipmap/multimediacontrol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

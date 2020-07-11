@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CommonFragmentStyleBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeMainActivity">
+
+    <TextView
+        android:id="@+id/tvErrorConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未连接服务器"
+        android:textColor="@color/red"
+        android:textSize="@dimen/x24"
+        app:layout_constraintBottom_toBottomOf="@id/tvRootName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvRootName" />
+
+    <TextView
+        android:id="@+id/tvRootName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x17"
+        android:layout_marginTop="@dimen/x15"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x27"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x38"
+        android:text="2019-10-10 22:10:10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x27"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/tvRootName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvRootName" />
+
+    <FrameLayout
+        android:id="@+id/layoutFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/rlMenu2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:background="#0D3874"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x138"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x138"
+        android:layout_marginRight="@dimen/x540"
+        android:layout_marginLeft="@dimen/x540"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

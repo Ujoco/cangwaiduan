@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#F5F4F1"
+        android:layout_marginLeft="@dimen/x55"
+        android:layout_marginTop="@dimen/x35"
+        android:layout_marginRight="@dimen/x533"
+        android:layout_marginBottom="@dimen/x40"
+        android:overScrollMode="never"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#0DB8D1"
+        android:layout_marginLeft="@dimen/x197"
+        android:layout_marginTop="@dimen/x83"
+        android:layout_marginRight="@dimen/x701"
+        android:layout_marginBottom="@dimen/x40"
+        android:overScrollMode="never"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="@dimen/x132"
+        android:layout_height="@dimen/x43"
+        android:src="@mipmap/rounded"
+        android:layout_marginTop="@dimen/x469"
+        android:layout_marginRight="@dimen/x190"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="签到成功"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x31"
+        android:layout_marginTop="@dimen/x470"
+        android:layout_marginRight="@dimen/x194"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="@dimen/x350"
+        android:layout_height="wrap_content"
+        android:text="姓名：李某某"
+        android:textColor="#474747"
+        android:textSize="@dimen/x26"
+        android:layout_marginTop="@dimen/x552"
+        android:layout_marginRight="@dimen/x84"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:layout_width="@dimen/x350"
+        android:layout_height="wrap_content"
+        android:text="编号：0101011"
+        android:textColor="#474747"
+        android:textSize="@dimen/x26"
+        android:layout_marginTop="@dimen/x615"
+        android:layout_marginRight="@dimen/x84"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="@dimen/x350"
+        android:layout_height="wrap_content"
+        android:text="时间：2019年11月01日 17:30"
+        android:textColor="#474747"
+        android:textSize="@dimen/x26"
+        android:layout_marginTop="@dimen/x668"
+        android:layout_marginRight="@dimen/x84"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

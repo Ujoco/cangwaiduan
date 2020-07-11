@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvRootName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x12"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x12"
+        android:text="2019-10-10 22:10:10"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x25"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/tvRootName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvRootName" />
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x65"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x35"
+        android:layout_marginTop="@dimen/x60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlTitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x40"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_marginRight="@dimen/x20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/x28"
+        android:layout_height="@dimen/x33"
+        android:layout_marginRight="@dimen/x8"
+        android:src="@mipmap/main_back"
+        app:layout_constraintBottom_toBottomOf="@id/tvBack"
+        app:layout_constraintRight_toLeftOf="@id/tvBack"
+        app:layout_constraintTop_toTopOf="@id/tvBack" />
+
+
+
+
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_item_bg"
+        android:layout_width="@dimen/x248"
+        android:layout_height="@dimen/x367"
+        android:src="#F59D2B"
+        tools:ignore="MissingConstraints" />p
+
+    <ImageView
+        android:id="@+id/img_hoto"
+        android:layout_width="@dimen/x220"
+        android:layout_height="@dimen/x266"
+        android:src="#000000"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_marginTop="@dimen/x14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李晓明"
+        android:textSize="@dimen/x33"
+        android:layout_marginLeft="@dimen/x71"
+        android:layout_marginTop="@dimen/x292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编号：1101110"
+        android:textSize="@dimen/x25"
+        android:layout_marginLeft="@dimen/x43"
+        android:layout_marginTop="@dimen/x333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    
+    <View
+        android:layout_width="@dimen/x1"
+        android:layout_height="@dimen/x40"
+        app:layout_constraintTop_toBottomOf="@+id/img_item_bg"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

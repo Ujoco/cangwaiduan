@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="@dimen/x1080"
+        android:layout_height="@dimen/x931"
+        android:layout_marginLeft="@dimen/x6"
+        android:src="@mipmap/b"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/x11"
+        android:layout_marginRight="@dimen/x808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+
+    <ImageView
+        android:layout_width="@dimen/x793"
+        android:layout_height="@dimen/x588"
+        android:src="@mipmap/a"
+        android:layout_marginRight="@dimen/x6"
+        android:layout_marginTop="@dimen/x13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+<!--    android:scaleType="fitXY"-->
+
+    <ImageView
+        android:layout_width="@dimen/x171"
+        android:layout_height="@dimen/x56"
+        android:src="@mipmap/rounded"
+        android:layout_marginRight="@dimen/x299"
+        android:layout_marginTop="@dimen/x618"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="挂 断"
+        android:textSize="@dimen/x40"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="@dimen/x340"
+        android:layout_marginTop="@dimen/x618"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    
+    
+    <ImageView
+        android:layout_width="@dimen/x44"
+        android:layout_height="@dimen/x44"
+        android:src="@mipmap/silence"
+        android:layout_marginRight="@dimen/x652"
+        android:layout_marginTop="@dimen/x700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    
+    <SeekBar
+        android:layout_width="@dimen/x476"
+        android:layout_height="@dimen/x14"
+        android:progressDrawable="@drawable/bg_adjust_seek_bar"
+
+        android:layout_marginRight="@dimen/x180"
+        android:layout_marginTop="@dimen/x714"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:layout_width="@dimen/x44"
+        android:layout_height="@dimen/x44"
+        android:src="@mipmap/voice"
+        android:layout_marginRight="@dimen/x130"
+        android:layout_marginTop="@dimen/x700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

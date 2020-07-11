@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_district"
+        android:layout_width="@dimen/x360"
+        android:layout_height="@dimen/x240"
+        android:src="#F50000"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="监区信息"
+        android:textSize="@dimen/x18"
+        android:layout_marginBottom="@dimen/x18"
+        android:layout_marginLeft="@dimen/x8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x18"
+        android:layout_marginLeft="@dimen/x20"
+        android:text="2020年07月03日 16:39:42"
+        android:layout_marginBottom="@dimen/x18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_information"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x254"
+        app:layout_constraintLeft_toRightOf="@+id/img_district"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".qfragment.Discipline.QFragmentPowercontrol">
+
+
+    <ImageView
+        android:id="@+id/img_television"
+        android:layout_width="@dimen/x192"
+        android:layout_height="@dimen/x162"
+        android:src="@mipmap/television"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x223"
+        android:layout_marginLeft="@dimen/x173"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#474747"
+        android:text="电 视"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x406"
+        android:layout_marginLeft="@dimen/x234"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+   <TextView
+       android:id="@+id/tv_television_open"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="@dimen/x30"
+       android:textColor="#1158A7"
+       android:text="开"
+
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="@dimen/x473"
+       android:layout_marginLeft="@dimen/x191"
+       app:layout_constraintStart_toStartOf="parent"
+       tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_switch_television"
+        android:layout_width="@dimen/x84"
+        android:layout_height="@dimen/x44"
+        android:src="@mipmap/open"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x474"
+        app:layout_constraintLeft_toRightOf="@+id/tv_television_open"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_television_shut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#1158A7"
+        android:text="关"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x473"
+        app:layout_constraintLeft_toRightOf="@+id/img_switch_television"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img_television_light"
+        android:layout_width="@dimen/x171"
+        android:layout_height="@dimen/x193"
+        android:src="@mipmap/light"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x199"
+        android:layout_marginLeft="@dimen/x616"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#474747"
+        android:text="电 灯"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x406"
+        android:layout_marginLeft="@dimen/x672"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_light_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#1158A7"
+        android:text="开"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x473"
+        android:layout_marginLeft="@dimen/x621"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_switch_light"
+        android:layout_width="@dimen/x84"
+        android:layout_height="@dimen/x44"
+        android:src="@mipmap/open"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x474"
+        app:layout_constraintLeft_toRightOf="@+id/tv_light_open"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_shut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#1158A7"
+        android:text="关"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x473"
+        app:layout_constraintLeft_toRightOf="@+id/img_switch_light"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img_television_fan"
+        android:layout_width="@dimen/x157"
+        android:layout_height="@dimen/x181"
+        android:layout_marginTop="@dimen/x205"
+        android:src="@mipmap/fan"
+        android:layout_marginRight="@dimen/x688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#474747"
+        android:text="风 扇"
+        android:layout_marginRight="@dimen/x733"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x406"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_fan_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#1158A7"
+        android:text="开"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x473"
+        android:layout_marginRight="@dimen/x812"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_switch_fan"
+        android:layout_width="@dimen/x84"
+        android:layout_height="@dimen/x44"
+        android:src="@mipmap/shut"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x474"
+        app:layout_constraintLeft_toRightOf="@+id/tv_fan_open"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#1158A7"
+        android:text="关"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x473"
+        app:layout_constraintLeft_toRightOf="@+id/img_switch_fan"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img_television_air"
+        android:layout_width="@dimen/x205"
+        android:layout_height="@dimen/x146"
+        android:layout_marginTop="@dimen/x239"
+        android:src="@mipmap/air"
+        android:layout_marginRight="@dimen/x232"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#474747"
+        android:text="空 调"
+        android:layout_marginRight="@dimen/x296"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x406"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_air_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#1158A7"
+        android:text="开"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x473"
+        android:layout_marginRight="@dimen/x384"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_switch_air"
+        android:layout_width="@dimen/x84"
+        android:layout_height="@dimen/x44"
+        android:src="@mipmap/shut"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x474"
+        app:layout_constraintLeft_toRightOf="@+id/tv_air_open"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x30"
+        android:textColor="#1158A7"
+        android:text="关"
+        android:layout_marginLeft="@dimen/x10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/x473"
+        app:layout_constraintLeft_toRightOf="@+id/img_switch_air"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

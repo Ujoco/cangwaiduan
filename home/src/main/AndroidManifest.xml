@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shuangtu.prison.home">
+
+    <application android:theme="@style/AppTheme">
+
+
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.HomeMainActivity" />
+        <activity android:name=".activity.HomeClassifyActivity"/>
+        <activity android:name=".activity.DisciplineViolations" />
+        <activity android:name=".activity.DisciplineCallManagementActivity" />
+        <activity android:name=".activity.DisciplineActivity" />
+    </application>
+
+</manifest>

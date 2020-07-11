@@ -1,0 +1,18 @@
+<resources>
+
+
+    <style name="CommonStyleBg">
+        <item name="android:background">@mipmap/bg_common</item>
+    </style>
+
+    <style name="CommonFragmentStyleBg">
+        <item name="android:background">@mipmap/fragment_bg</item>
+    </style>
+
+    <style name="CommonFragmentStyleColor">
+        <item name="android:background">#E7F1FD</item>
+    </style>
+
+
+
+</resources>

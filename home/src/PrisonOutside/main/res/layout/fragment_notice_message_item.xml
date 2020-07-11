@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x40">
+
+    <ImageView
+        android:id="@+id/ivShow"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x16"
+        android:layout_marginLeft="@dimen/x40"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_notice_message_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginRight="@dimen/x30"
+        android:maxLines="1"
+        android:text="佳节思亲 中秋团圆 情暖高墙"
+        android:textColor="#474747"
+        android:textSize="@dimen/x20"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ivShow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

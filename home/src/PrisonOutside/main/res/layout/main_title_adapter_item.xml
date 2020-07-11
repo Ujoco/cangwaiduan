@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvTitle"
+    android:layout_width="@dimen/x200"
+    android:layout_height="@dimen/x55"
+    android:gravity="center"
+    android:paddingTop="2px"
+    android:textColor="@color/white"
+    android:textSize="@dimen/x33"
+    android:orientation="vertical"
+    app:bl_selected_drawable="@mipmap/framgment_title_bg">
+
+
+
+</TextView>

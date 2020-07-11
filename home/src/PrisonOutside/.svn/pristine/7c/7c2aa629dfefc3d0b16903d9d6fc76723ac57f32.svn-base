@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/x10"
+
+
+        android:scrollbarSize="@dimen/x3"
+        android:scrollbarThumbVertical="@color/blue"
+        android:scrollbars="vertical"
+
+
+
+
+
+        />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

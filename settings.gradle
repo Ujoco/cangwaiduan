@@ -1,0 +1,6 @@
+
+include ':app', ':common', ':home', ':discern', ':tts', ':form'
+
+
+rootProject.name='PrisonOutside'
+

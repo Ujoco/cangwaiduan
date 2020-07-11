@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+        <shape>
+            <corners android:radius="50dp"/>
+            <solid android:color="#2E4E96"/>
+        </shape>
+    </item>
+
+</layer-list>

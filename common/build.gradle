@@ -1,0 +1,78 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext
+
+android {
+    compileSdkVersion config.android.compileSdkVersion
+    buildToolsVersion config.android.buildToolsVersion
+
+    compileOptions {
+        encoding "UTF-8"
+    }
+
+    defaultConfig {
+        minSdkVersion config.android.minSdkVersion
+        targetSdkVersion config.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles 'consumer-rules.pro'
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+    }
+
+    defaultConfig {
+        ndk {
+            abiFilters  'armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api config.dependencies.appcompat
+    api config.dependencies.constraintlayout
+    api config.dependencies.arouter
+    //  api config.dependencies.utilcode
+    api config.dependencies.utilcodex
+    annotationProcessor config.dependencies.arouter_compiler
+    api config.dependencies.rxjava
+    api config.dependencies.rxandroid
+    api config.dependencies.autosize
+    api config.dependencies.eventbus
+    api config.dependencies.sweetalert
+    api config.dependencies.background
+    api config.dependencies.adapter
+    api config.dependencies.recyclerview
+    api config.dependencies.glide
+    api config.dependencies.retrofit
+    api config.dependencies.converter_gson
+    api config.dependencies.adapter_rxjava
+    api config.dependencies.rxlifecycle
+    api config.dependencies.SmartRefreshLayout
+    api config.dependencies.SmartRefreshHeader
+    annotationProcessor config.dependencies.glide_processor
+ //   api config.dependencies.SmartTable
+    api config.dependencies.litepal
+    api config.dependencies.circleimageview
+    api config.dependencies.rxpermissions
+    api config.dependencies.bugly
+    api config.dependencies.WebSocket
+
+}

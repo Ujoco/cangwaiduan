@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_screen"
+        android:layout_width="@dimen/x298"
+        android:layout_height="@dimen/x193"
+        android:src="@color/yellow"
+        tools:ignore="MissingConstraints" />
+    
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/x5"
+        app:layout_constraintTop_toBottomOf="@+id/img_screen"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

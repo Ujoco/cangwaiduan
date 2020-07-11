@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/login_common"/>
+
+    <FrameLayout
+        android:id="@+id/frameFace"
+        app:layout_constraintTop_toTopOf="@id/ivFace"
+        app:layout_constraintLeft_toLeftOf="@id/ivFace"
+        app:layout_constraintRight_toRightOf="@id/ivFace"
+        app:layout_constraintBottom_toBottomOf="@id/ivFace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/ivFace"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@mipmap/login_item_bg"
+        android:layout_width="@dimen/x352"
+        android:layout_height="@dimen/x352"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#3881E9"
+        android:textSize="@dimen/x27"
+        app:layout_constraintTop_toBottomOf="@id/ivFace"
+        android:layout_marginTop="@dimen/x28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivStatus"
+        app:layout_constraintTop_toTopOf="@id/tvStatus"
+        app:layout_constraintRight_toLeftOf="@id/tvStatus"
+        android:src="@mipmap/login_check_succes"
+        app:layout_constraintBottom_toBottomOf="@id/tvStatus"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_width="@dimen/x34"
+        android:layout_height="@dimen/x34"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
