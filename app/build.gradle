@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+def config = rootProject.ext
+
+android {
+    compileSdkVersion config.android.compileSdkVersion
+    buildToolsVersion config.android.buildToolsVersion
+
+    compileOptions {
+        encoding "UTF-8"
+    }
+
+    defaultConfig {
+        applicationId "com.shuangtu.outside"
+        minSdkVersion config.android.minSdkVersion
+        targetSdkVersion config.android.targetSdkVersion
+        versionCode 1
+        versionName "1.1.1"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'shuang tu co.'
+            keyPassword '852789'
+            storeFile file('../signingConfigs/shuangtu_jytv.jks')
+            storePassword '852789'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+    }
+
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                //在这里修改apk文件名
+                outputFileName = "STInside_v${variant.versionName}.apk"
+            }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api project(':common')
+
+    if (!isModule.toBoolean()) {
+        api project(':home')
+        api project(':discern')
+    }
+
+
+    annotationProcessor config.dependencies.arouter_compiler
+
+
+}
